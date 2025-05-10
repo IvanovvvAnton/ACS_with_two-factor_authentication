@@ -1,5 +1,31 @@
 # ACS_with_two-factor_authentication
 
+## 📋 Table of Contents
+1. [🔐 Project Description](#-project-description)
+2. [⚙️ Main Components](#-main-components)
+   - [🧠 1. Controller: Arduino Uno + RFID RC522](#-1-controller-arduino-uno--rfid-rc522)
+   - [🧠 2. Server Side: Python + Flask](#-2-server-side-python--flask)
+   - [🧠 3. Biometrics: Face Recognition](#-3-biometrics-face-recognition)
+   - [🗂️ 4. Database](#-4-database)
+   - [🌐 5. Web Interface](#-5-web-interface)
+   - [📷 6. Camera](#-6-camera)
+   - [🔄 7. Real-time Communication](#-7-real-time-communication)
+   - [🔌 8. Additional Hardware](#-8-additional-hardware-components)
+3. [1️⃣ RFID Identification](#1%EF%B8%8F%E2%83%A3-rfid-identification)
+4. [2️⃣ Face Recognition System](#2%EF%B8%8F%E2%83%A3-face-recognition-system)
+5. [📊 Biometric Authentication Stages](#-biometric-authentication-stages)
+   - [📸 1. Face Capture](#-1-face-capture)
+   - [🔍 2. Embedding Comparison](#-2-embedding-comparison)
+   - [➖ 3. Similarity Estimation](#-3-similarity-estimation)
+   - [❓ 4. Missing Biometric Data](#-4-missing-biometric-data)
+   - [🚫 5. ID Mismatch](#-5-id-mismatch)
+   - [✅📤 6. Successful Authentication](#-6-successful-authentication)
+6. [🔐 Security Features](#-security-features)
+7. [✅ Future Plans](#-future-plans)
+8. [📘 Conclusion](#-conclusion)
+
+
+
 ## 🔐 Project description
 
 This project is an access control and management system (ACS) implemented using two-factor authentication (2FA). The aim of the project is to ensure reliable identification and control of employees' access to the protected territory of an enterprise, educational institution or other facility with high security requirements.
