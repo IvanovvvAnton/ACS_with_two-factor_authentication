@@ -8,7 +8,7 @@
    - [Biometrics: Face Recognition](#-3-biometrics-face-recognition-face-recognition)
    - [Database](#%EF%B8%8F-4-database-mysql-or-postresql)
    - [Web Interface](#-5-web-interface-html--css)
-   - [Camera](#-6-camera-usb-or-pi-camera)
+   - [Camera](#-6-camera-usb-or-ip-camera)
    - [Real-time Communication](#-7-flask-socketio-websocket)
    - [Additional Hardware](#-8-additional-hardware-components)
 3. [RFID Identification](#1%EF%B8%8F⃣-the-principle-of-operation-of-rfid-identification)
@@ -31,7 +31,7 @@
    - [Support for multiple biometric factors](#-support-for-multiple-biometric-factors)
    - [Enabling the mobile app](#-enabling-the-mobile-app)
 10. [Conclusion](#-conclusion)
-11. [Authors](#)
+11. [Authors](#authors)
 
 
 ## 🔐 Project description
