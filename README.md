@@ -1,29 +1,37 @@
 # ACS_with_two-factor_authentication
 
 ## 📋 Table of Contents
-1. [🔐 Project Description](#-project-description)
-2. [⚙️ Main Components](#-main-components)
-   - [🧠 1. Controller: Arduino Uno + RFID RC522](#-1-controller-arduino-uno--rfid-rc522)
-   - [🧠 2. Server Side: Python + Flask](#-2-server-side-python--flask)
-   - [🧠 3. Biometrics: Face Recognition](#-3-biometrics-face-recognition)
-   - [🗂️ 4. Database](#-4-database)
-   - [🌐 5. Web Interface](#-5-web-interface)
-   - [📷 6. Camera](#-6-camera)
-   - [🔄 7. Real-time Communication](#-7-real-time-communication)
-   - [🔌 8. Additional Hardware](#-8-additional-hardware-components)
-3. [1️⃣ RFID Identification](#1%EF%B8%8F%E2%83%A3-rfid-identification)
-4. [2️⃣ Face Recognition System](#2%EF%B8%8F%E2%83%A3-face-recognition-system)
-5. [📊 Biometric Authentication Stages](#-biometric-authentication-stages)
-   - [📸 1. Face Capture](#-1-face-capture)
-   - [🔍 2. Embedding Comparison](#-2-embedding-comparison)
-   - [➖ 3. Similarity Estimation](#-3-similarity-estimation)
-   - [❓ 4. Missing Biometric Data](#-4-missing-biometric-data)
-   - [🚫 5. ID Mismatch](#-5-id-mismatch)
-   - [✅📤 6. Successful Authentication](#-6-successful-authentication)
-6. [🔐 Security Features](#-security-features)
-7. [✅ Future Plans](#-future-plans)
-8. [📘 Conclusion](#-conclusion)
-
+1. [Project Description](#-project-description)
+2. [Main Components](#%EF%B8%8F-main-components)
+   - [Controller: Arduino Uno + RFID RC522](#-1-controller-arduino-uno--rfid-rc522)
+   - [Server Side: Python + Flask](#-2-server-side-python--flask)
+   - [Biometrics: Face Recognition](#-3-biometrics-face-recognition-face-recognition)
+   - [Database](#%EF%B8%8F-4-database-mysql-or-postresql)
+   - [Web Interface](#-5-web-interface-html--css)
+   - [Camera](#-6-camera-usb-or-pi-camera)
+   - [Real-time Communication](#-7-flask-socketio-websocket)
+   - [Additional Hardware](#-8-additional-hardware-components)
+3. [RFID Identification](#1%EF%B8%8F⃣-the-principle-of-operation-of-rfid-identification)
+4. [Face Recognition System](#2%EF%B8%8F⃣-the-principle-of-operation-of-the-face-recognition-system)
+5. [Biometric Authentication Stages](#-the-stages-of-the-biometric-authentication-system)
+   - [Face Capture](#-1-capturing-a-users-face-image)
+   - [Embedding Comparison](#-2-comparison-of-embaddings)
+   - [Similarity Estimation](#-3-an-estimate-of-the-degree-of-similarity-is-the-euclidean-distance)
+   - [Missing Biometric Data](#-4-lack-of-biometric-data-in-the-database)
+   - [ID Mismatch](#-5-id-mismatch-during-recognition)
+   - [6. Successful Authentication](#-6-successful-two-factor-authentication-and-data-transfer)
+6. [Security Features](#-security)
+   - [Event logging](#-1-full-event-logging)
+   - [Two factor authentication](#-2-two-factor-authentication-2fa)
+   - [Limited access](#-3-limited-access-to-the-control-panel)
+   - [Network security](#-4-network-security-measures)
+8. [Future Plans](#-plans-for-the-future)
+   - [Integration with the telegram bot](#-integration-with-the-telegram-bot)
+   - [Reporting and analytics](#-enhanced-reporting-and-analytics)
+   - [Support for multiple biometric factors](#-support-for-multiple-biometric-factors)
+   - [Enabling the mobile app](#-enabling-the-mobile-app)
+10. [Conclusion](#-conclusion)
+11. [Authors](#)
 
 
 ## 🔐 Project description
@@ -79,8 +87,8 @@ A relational database is used to store information about users (full name, UID, 
 ### 🌐 5. Web Interface: HTML + CSS 
 The admin panel allows you to view current events, manage users, upload new photos, filter logs, and track who is currently in the building. The interface is designed using Flask HTML templates and supports authorization.
 
-### 📷 6. Camera (USB or Pi Camera)
-The camera connects to the server and is used to capture the user's face when trying to log in. The snapshot is analyzed in real time, without the need to save the image to disk (if not required). A standard USB camera or Raspberry Pi camera is used.
+### 📷 6. Camera (USB or IP Camera)
+The camera connects to the server and is used to capture the user's face when trying to log in. The snapshot is analyzed in real time, without the need to save the image to disk (if not required). A standard USB camera or IP camera is used.
 
 ### 🔄 7. Flask-SocketIO (WebSocket)
 WebSocket is used via the Flask-SocketIO library to display data on a web page in real time. After successful authentication, the user's data (full name, login time, status) is immediately displayed on the monitoring page without restarting.
@@ -225,3 +233,7 @@ In the future, it is planned to develop a mobile application for iOS and Android
 An access control system with two-factor authentication using RFID and facial recognition significantly increases the level of security at facilities with high security requirements. The combined use of physical (RFID) and biometric (face recognition) authentication factors reduces the risks of unauthorized access, even if one of the factors has been lost or tampered with. This system provides reliable identification and access control, creating additional barriers for intruders.
 
 In addition, the system has a flexible and scalable architecture, which allows it to be adapted for both small offices and large organizations with distributed infrastructure. In addition, the implementation of WebSocket for displaying real-time data and the ability to integrate with other access control systems make the project a convenient and effective tool for monitoring and managing security.
+
+# Authors
+If you have any questions, you can ask them to us by writing to us at email:
+- ivanovvvvvvvanton3829@gmail.com
